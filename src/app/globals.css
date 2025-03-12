@@ -1,2 +1,148 @@
 @import "tailwindcss";
 
+@tailwind utilities;
+
+:root{
+    --cor-de-fundo: linear-gradient(135deg, #F20C0CBD 0%, #FF7C1D 25%, #FF7D54 100%);
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #000000;
+    --cor-botao: #EB410DDC;
+    --botao-hover: #E35D10;
+    --fonte-principal: 'Nunito', sans-serif;
+    --fonte-secundaria: 'Inter', sans-serif;
+}   
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cor-de-fundo);
+} 
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3.5em 1em;
+    height: 4rem;
+    width: 100%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo__principal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2.25em;
+    height: 2.75em;
+    transition: transform 0.3s;
+    isolation: isolate
+}
+
+.logo__principal:hover {
+    transform: scale(1.1);
+}
+
+.logo__alternativa {
+    position: absolute;
+    top: 4.3%;
+    left: 6.5%;
+    color: white;
+    font-family: var(--fonte-secundaria);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.menu__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.menu__link {
+    font-family: var(--fonte-principal);
+    font-size: 1.2rem;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 1.75rem;
+    font-weight: normal; 
+    transition: all ease-in-out 0.3s;
+}
+
+.menu__link:hover {
+    font-weight: bold;
+}
+
+.menu__botao-login {
+    display: flex;
+    margin-top: 1.5vh;
+    background-color: var(--cor-botao);
+    text-align: center;
+    border: none;
+    padding: 0.7rem 1rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 16px;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-weight: normal;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;   
+}
+
+/* Efeito de hover no botão de login */
+.menu__botao-login:hover {
+    background-color: var(--botao-hover);
+    font-weight: bold;
+}
+
+.titulo {
+    margin-left: auto;
+    margin-bottom: 17vh;
+    width: 90%;
+    font-size: 6rem;
+    font-weight: 900;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    margin-bottom: 0;
+}
+
+.subtitulo {
+    margin-left: 10.2vw;
+    width: 37.5rem;
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    opacity: 0.7;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.botao__principal {
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    background-color: var(--cor-botao);
+    text-align: center;
+    background-color: var(--cor-botao);
+    width: 200px;
+    border: none;
+    padding: 1.25rem 2.25rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 5vh;
+    margin-left: 22.5vw;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.botao__principal:hover {
+    background-color: var(--botao-hover);
+    transform: scale(1.05);
+}
+
