@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@tailwind utilities;
-
 :root{
     --cor-de-fundo: linear-gradient(135deg, #F20C0CBD 0%, #FF7C1D 25%, #FF7D54 100%);
     --cor-primaria: #FFFFFF;
@@ -125,7 +123,6 @@ body {
     display: inline-block;
     background-color: var(--cor-botao);
     text-align: center;
-    background-color: var(--cor-botao);
     width: 200px;
     border: none;
     padding: 1.25rem 2.25rem;
@@ -146,3 +143,120 @@ body {
     transform: scale(1.05);
 }
 
+/* Lista de conteúdo */
+.conteudo__lista {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    margin-top: 10vh;
+    gap: 10rem;
+}
+
+/* Itens da lista */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+
+/* Estilos para figuras */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+figure img {
+    width: 80%;
+    height: 80%;
+    transition: all 0.3s ease-in-out;
+}
+
+figure img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos das seções */
+figcaption {
+    font-size: 1.5rem;
+    margin-top: 2vh;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+/* Estilo do subtítulo */
+.secao__subtitulo {
+    margin-top: 2vh;
+    margin-left: 14vw;
+    font-family: var(--fonte-principal);
+    opacity: 0.7;
+}
+
+/* Estilização da lista de status */
+.status {
+    list-style: none; 
+    padding: 20em;
+    margin: 2rem 0;
+    margin-top: -25vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+/* Estilização dos itens da lista */
+.status__item {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fab6;
+    padding: 1.5rem;
+    border-radius: 16px; 
+    box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease-in-out;
+}
+
+.status__item:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização do ícone de status */
+.status__icone {
+    width: 3rem; 
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+/* Ajuste de tamanho das imagens dentro do ícone */
+.status__icone img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilização do texto dentro do status */
+.status__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+/* Títulos dentro dos status */
+.status__titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Descrição do status */
+.status__descricao {
+    font-size: 1rem;
+    color: #666;
+    opacity: 0.7;
+}

@@ -4,7 +4,7 @@ export default function Footer() {
       <div>
         <a href="#top" aria-label="Voltar ao topo">
           <img 
-            src="/logo-site.png" 
+            src="/assets/logo-site.png" 
             alt="Logo do Site" 
             className="mt-12 mx-auto"
           />
