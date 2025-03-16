@@ -1,11 +1,15 @@
+import Image from 'next/image';
+
 export default function Footer() {
   return (
     <footer className="mt-[50vh] bg-[var(--cor-secundaria)] opacity-90 px-20 py-20 text-center text-[var(--cor-primaria)] border-t-2 border-[var(--cor-primaria)]">
       <div>
         <a href="#top" aria-label="Voltar ao topo">
-          <img 
-            src="/assets/logo-site.png" 
-            alt="Logo do Site" 
+          <Image
+            src="/assets/logo-site.png"
+            alt="Logo do Site"
+            width={50}
+            height={50}
             className="mt-12 mx-auto"
           />
         </a>

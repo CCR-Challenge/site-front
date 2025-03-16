@@ -44,8 +44,8 @@ body {
 
 .logo__alternativa {
     position: absolute;
-    top: 4.3%;
-    left: 6.5%;
+    top: 4.2vh;
+    left: 6vw;
     color: white;
     font-family: var(--fonte-secundaria);
     font-weight: 900;
@@ -161,32 +161,7 @@ body {
 }
 
 
-/* Estilos para figuras */
-figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
 
-figure img {
-    width: 80%;
-    height: 80%;
-    transition: all 0.3s ease-in-out;
-}
-
-figure img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Títulos das seções */
-figcaption {
-    font-size: 1.5rem;
-    margin-top: 2vh;
-    font-weight: bold;
-    color: var(--cor-primaria);
-}
 
 /* Estilo do subtítulo */
 .secao__subtitulo {

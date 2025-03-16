@@ -1,10 +1,17 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
     <header className="header">
       <Link href="/">
-        <img src="/assets/logo-site.png" alt="Logo do Site" className="logo__principal" />
+        <Image
+          src="/assets/logo-site.png"
+          alt="Logo do Site"
+          width={45}
+          height={50}
+          className="logo__principal"
+        />
 
         <p className="logo__alternativa">SMARTTRACK.</p>
       </Link>
@@ -26,13 +33,15 @@ export default function Header() {
       </nav>
 
       <div>
-      <a href="perfil.html">
-        <img 
-          src="../assets/perfil-pequeno.png" 
-          alt="Ícone de perfil" 
-          className="w-1/2 ml-[1.5vw] transition-transform duration-500 ease-in-out hover:rotate-[50deg]"
+      <Link href="/perfil">
+        <Image
+          src="/assets/perfil-pequeno.png"
+          alt="Ícone de perfil"
+          width={100}
+          height={100}
+          className="w-1/2 ml-[1.2vw] mb-1 transition-transform duration-500 ease-in-out hover:rotate-[50deg]"
         />
-      </a>
+      </Link>
     </div>
     </header>
   );
