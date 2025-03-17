@@ -39,7 +39,7 @@ const Status = () => {
                             />
                         </div>
                         <div className="flex flex-col gap-1">
-                            <h4 className="text-lg font-bold text-gray-800">Câmera danificada</h4>
+                            <h3 className="text-lg font-bold text-gray-800">Câmera danificada</h3>
                             <p className="text-base text-gray-600 opacity-70">Necessidade de atualização</p>
                         </div>
                     </li>
@@ -55,7 +55,7 @@ const Status = () => {
                             />
                         </div>
                         <div className="flex flex-col gap-1">
-                            <h5 className="text-lg font-bold text-gray-800">Falhas de monitoramento</h5>
+                            <h3 className="text-lg font-bold text-gray-800">Falhas de monitoramento</h3>
                             <p className="text-base text-gray-600 opacity-70">Pendente</p>
                         </div>
                     </li>
@@ -66,12 +66,12 @@ const Status = () => {
                                 src="/assets/bola-verde.png"
                                 alt="Ícone redondo verde"
                                 width={48}
-                                height={48}
+                                height={48} 
                                 className="w-full h-auto"
                             />
                         </div>
                         <div className="flex flex-col gap-1">
-                            <h6 className="text-lg font-bold text-gray-800">Anomalia nos trilhos</h6>
+                            <h3 className="text-lg font-bold text-gray-800">Anomalia nos trilhos</h3>
                             <p className="text-base text-gray-600 opacity-70">Resolvido à 3 semanas atrás</p>
                         </div>
                     </li>

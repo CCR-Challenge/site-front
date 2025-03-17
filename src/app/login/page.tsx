@@ -25,7 +25,7 @@ const Login = () => {
             <input
               type="password"
               id="password"
-              name="senha"
+              name="password"
               placeholder="Senha:"
               required
               className="bg-white ml-[12.5vw] w-[40%] p-6 mt-4 rounded-xl border-none font-primary"
@@ -41,16 +41,14 @@ const Login = () => {
                 Login
               </button>
             </Link>
-          </div>
 
-          <div className="block mt-[3vh] ml-[26vw]">
-            <p className="text-white">
+            <p className="text-white mt-4 -ml-9">
               Ainda não é registrado?
               <Link href="/registro" className="no-underline">
                 <span className="text-[var(--cor-secundaria)] font-semibold hover:underline ml-1">
                   Registre-se
                 </span>
-              </Link>
+              </Link> 
             </p>
           </div>
         </form>

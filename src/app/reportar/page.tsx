@@ -66,7 +66,7 @@ const Reportar = () => {
                     <div className="flex justify-center items-center">
                         <button
                             type="submit"
-                            className="bg-[var(--cor-botao)] w-[15%] text-center border-none p-4 text-xl cursor-pointer rounded-[16px] transition-all ease-in-out duration-300 block text-[var(--cor-primaria)] font-semibold hover:bg-[var(--botao-hover)] hover:scale-105"
+                            className="bg-[var(--cor-botao)] w-[20%] text-center border-none p-4 text-xl cursor-pointer rounded-[16px] transition-all ease-in-out duration-300 block text-[var(--cor-primaria)] font-semibold hover:bg-[var(--botao-hover)] hover:scale-105"
                             aria-label="Enviar feedback"
                         >
                             Enviar Feedback

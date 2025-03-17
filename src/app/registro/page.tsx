@@ -54,19 +54,17 @@ const Registro = () => {
                   Registrar
                 </button>
               </Link>
+
+              <p className="text-white mt-4 -ml-3">
+                Já tem registro? Faça
+                <Link href="/login" className="no-underline">
+                  <span className="text-[var(--cor-secundaria)] font-semibold hover:underline ml-1">
+                    Login
+                  </span>
+                </Link>
+              </p>
             </div>
           </form>
-
-          <div className="block mt-[3vh] ml-[27vw]">
-            <p className="text-white">
-              Já tem registro? Faça
-              <Link href="/login" className="no-underline">
-                <span className="text-[var(--cor-secundaria)] font-semibold hover:underline ml-1">
-                  Login
-                </span>
-              </Link>
-            </p>
-          </div>
         </div>
       </section>
     </main>

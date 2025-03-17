@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Header() {
   return (
     <header className="header">
-      <Link href="/">
+      <Link href="/" aria-label='Voltar para a página principal'>
         <Image
           src="/assets/logo-site.png"
           alt="Logo do Site"
@@ -33,16 +33,16 @@ export default function Header() {
       </nav>
 
       <div>
-      <Link href="/perfil">
-        <Image
-          src="/assets/perfil-pequeno.png"
-          alt="Ícone de perfil"
-          width={100}
-          height={100}
-          className="w-1/2 ml-[1.2vw] mb-1 transition-transform duration-500 ease-in-out hover:rotate-[50deg]"
-        />
-      </Link>
-    </div>
+        <Link href="/perfil" aria-label='Ir para o perfil'>
+          <Image
+            src="/assets/perfil-pequeno.png"
+            alt="Ícone de perfil"
+            width={100}
+            height={100}
+            className="w-1/2 ml-[1.2vw] mb-2 transition-transform duration-500 ease-in-out hover:rotate-[50deg]"
+          />
+        </Link>
+      </div>
     </header>
   );
 }
