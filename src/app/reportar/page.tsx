@@ -18,7 +18,7 @@ const Reportar = () => {
 
                     <form
                         id="formulario__feedback"
-                        className="flex flex-col gap-4 max-w-[72vw] mx-auto my-[10vh] p-8 rounded-xl shadow-lg bg-[#f8f9fab6]"
+                        className="flex flex-col gap-4 max-w-[73vw] mx-auto my-[10vh] p-8 rounded-xl shadow-lg bg-[#f8f9fab6]"
                         action="/submit-feedback"
                         method="POST"
                     >
