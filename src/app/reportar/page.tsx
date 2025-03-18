@@ -31,7 +31,7 @@ const Reportar = () => {
 
                             placeholder="Descreva o problema aqui..."
                             required
-                            className="w-full p-3 text-base border-2 border-gray-300 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-primary"
+                            className="bg-white w-full p-3 text-base border-2 border-gray-300 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-primary"
                         />
                     </div>
 
@@ -45,7 +45,7 @@ const Reportar = () => {
 
                             placeholder="Explique o motivo aqui..."
                             required
-                            className="w-full p-3 text-base border-2 border-gray-300 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-primary"
+                            className="bg-white w-full p-3 text-base border-2 border-gray-300 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-primary"
                         />
                     </div>
 
@@ -59,7 +59,7 @@ const Reportar = () => {
 
                             placeholder="Informe a estação aqui..."
                             required
-                            className="w-full p-3 text-base border-2 border-gray-300 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-primary"
+                            className="bg-white w-full p-3 text-base border-2 border-gray-300 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-primary"
                         />
                     </div>
 

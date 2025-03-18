@@ -5,10 +5,7 @@ import Image from 'next/image';
 const Home = () => {
     return (
         <>
-            <Head>
-                <title>Home</title>
-                <meta name="description" content="Agora ficou fácil andar nos trilhos" />
-            </Head>
+
             <main className="mt-[10vh] flex flex-col items-center">
                 <section>
                     <h1 className="ml-[13.5vw] w-[60%] text-[6rem] font-extrabold text-white">
