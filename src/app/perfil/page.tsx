@@ -1,7 +1,33 @@
+import { useState } from 'react';
 import '../globals.css';
 import Image from 'next/image';
-
+ 
 const Perfil = () => {
+    // Estado para armazenar os valores dos inputs
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [number, setNumber] = useState('');
+ 
+    const handleUpdate = (event: React.MouseEvent<HTMLButtonElement>) => {
+        event.preventDefault(); // Previne o comportamento padrão do botão
+ 
+        // Verificação para garantir que todos os campos foram preenchidos
+        if (!name.trim() || !email.trim() || !password.trim()) {
+            alert("Preencha todos os campos antes de atualizar.");
+            return;
+        }
+ 
+        // Mostra o alerta de sucesso
+        alert('Perfil atualizado com sucesso! ✅');
+ 
+        // Limpa os campos após o envio
+        setName('');
+        setEmail('');
+        setPassword('');
+        setNumber('');
+    };
+ 
     return (
         <>
             <main className="mt-[10vh]">
@@ -73,7 +99,7 @@ const Perfil = () => {
                 </section>
             </main>
         </>
-    )
+    );
 };
-
+ 
 export default Perfil;

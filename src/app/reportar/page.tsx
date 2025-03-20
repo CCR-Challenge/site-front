@@ -1,6 +1,29 @@
-import '../globals.css';
-
+"use client";
+ 
+import { useState, FormEvent } from "react";
+import "../globals.css";
+ 
 const Reportar = () => {
+    const [problema, setProblema] = useState("");
+    const [motivo, setMotivo] = useState("");
+    const [estacao, setEstacao] = useState("");
+ 
+    const handleSubmit = (event: FormEvent) => {
+        event.preventDefault(); // Evita o recarregamento da página
+ 
+        if (!problema.trim() || !motivo.trim() || !estacao.trim()) {
+            alert("Preencha todos os campos antes de enviar.");
+            return;
+        }
+ 
+        alert("Feedback enviado com sucesso! ✅");
+ 
+        // Limpa os campos do formulário
+        setProblema("");
+        setMotivo("");
+        setEstacao("");
+    };
+ 
     return (
         <>
             <main className="mt-[10vh]">
@@ -79,5 +102,6 @@ const Reportar = () => {
         </>
     )
 };
-
+ 
 export default Reportar;
+ 
