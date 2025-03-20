@@ -42,7 +42,7 @@
 
 - 📌 O vídeo de apresentação do projeto está disponível no link:
 
-🔗 **Youtube:** [Acessar vídeo](#)
+🔗 **Youtube:** [Acessar vídeo](https://youtu.be/tNTSzB1kVls)
 
 ## 🔧 Instalação e execução
 
