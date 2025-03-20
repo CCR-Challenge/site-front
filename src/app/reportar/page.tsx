@@ -1,29 +1,28 @@
 "use client";
- 
+
 import { useState, FormEvent } from "react";
 import "../globals.css";
- 
+
 const Reportar = () => {
     const [problema, setProblema] = useState("");
     const [motivo, setMotivo] = useState("");
     const [estacao, setEstacao] = useState("");
- 
+
     const handleSubmit = (event: FormEvent) => {
-        event.preventDefault(); // Evita o recarregamento da página
- 
+        event.preventDefault(); 
+
         if (!problema.trim() || !motivo.trim() || !estacao.trim()) {
             alert("Preencha todos os campos antes de enviar.");
             return;
         }
- 
+
         alert("Feedback enviado com sucesso! ✅");
- 
-        // Limpa os campos do formulário
+
         setProblema("");
         setMotivo("");
         setEstacao("");
     };
- 
+
     return (
         <>
             <main className="mt-[10vh]">
@@ -42,8 +41,7 @@ const Reportar = () => {
                     <form
                         id="formulario__feedback"
                         className="flex flex-col gap-4 max-w-[73vw] mx-auto my-[10vh] p-8 rounded-xl shadow-lg bg-[#f8f9fab6]"
-                        action="/submit-feedback"
-                        method="POST"
+                        onSubmit={handleSubmit} 
                     >
                         <div>
                             <label htmlFor="problema" className="block font-semibold text-xl text-gray-800 mb-2">
@@ -52,7 +50,8 @@ const Reportar = () => {
                             <textarea
                                 name="problema"
                                 id="problema"
-
+                                value={problema}
+                                onChange={(e) => setProblema(e.target.value)} 
                                 placeholder="Descreva o problema aqui..."
                                 required
                                 className="bg-white w-full p-3 text-base border-2 border-gray-300 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-primary"
@@ -66,7 +65,8 @@ const Reportar = () => {
                             <textarea
                                 name="motivo"
                                 id="motivo"
-
+                                value={motivo} 
+                                onChange={(e) => setMotivo(e.target.value)} 
                                 placeholder="Explique o motivo aqui..."
                                 required
                                 className="bg-white w-full p-3 text-base border-2 border-gray-300 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-primary"
@@ -80,7 +80,8 @@ const Reportar = () => {
                             <textarea
                                 name="estacao"
                                 id="estacao"
-
+                                value={estacao} 
+                                onChange={(e) => setEstacao(e.target.value)} 
                                 placeholder="Informe a estação aqui..."
                                 required
                                 className="bg-white w-full p-3 text-base border-2 border-gray-300 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-primary"
@@ -89,7 +90,7 @@ const Reportar = () => {
 
                         <div className="flex justify-center items-center">
                             <button
-                                type="submit"
+                                type="submit" 
                                 className="bg-[var(--cor-botao)] w-[20%] text-center border-none p-4 text-xl cursor-pointer rounded-[16px] transition-all ease-in-out duration-300 block text-[var(--cor-primaria)] font-semibold hover:bg-[var(--botao-hover)] hover:scale-105"
                                 aria-label="Enviar feedback"
                             >
@@ -100,8 +101,7 @@ const Reportar = () => {
                 </section>
             </main>
         </>
-    )
+    );
 };
- 
+
 export default Reportar;
- 
