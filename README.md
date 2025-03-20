@@ -3,6 +3,8 @@
 - Site desenvolvido em **Next.js** + **TypeScript**, baseado no protótipo do projeto no **Figma** e no código HTML da Sprint2.
 - O foco principal é a **componentização**, **responsividade** e a utilização do **TailwindCSS** para estilização.
 
+![Prévia do projeto](/assets/previa-projeto.png)
+
 ## 🧠 Tecnologias Utilizadas
 
 - **Next.js** - framework que estenda as funcionalidades do React.
@@ -17,7 +19,9 @@
 
 - O design e a estrutura do projeto foram baseados no protótipo criado no **Figma**, garantindo consistência visual e usabilidade.
 
-🔗 **Link do Figma:** [Acessar protótipo](#)
+![Figma](assets./figma-previa.png)
+
+🔗 **Link do Figma:** [Acessar protótipo](https://www.figma.com/design/ZiPSJpk6zpmnMYms0RiMk7/Prot%C3%B3tipo-ST?node-id=2-10&t=yHPR8Xn97eOWXES0-1)
 
 ## 🗂️ Roadmap
 
