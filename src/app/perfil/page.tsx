@@ -6,10 +6,10 @@ import Image from 'next/image';
 
 const Perfil = () => {
     // Estado para armazenar os valores dos inputs
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [number, setNumber] = useState('');
+    const [name, setName] = useState('');  // Inicializado com string vazia
+    const [email, setEmail] = useState('');  // Inicializado com string vazia
+    const [password, setPassword] = useState('');  // Inicializado com string vazia
+    const [number, setNumber] = useState('');  // Inicializado com string vazia
 
     const handleUpdate = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault(); // Previne o comportamento padrão do botão
