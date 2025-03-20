@@ -17,7 +17,7 @@
 
 - O design e a estrutura do projeto foram baseados no protótipo criado no **Figma**, garantindo consistência visual e usabilidade.
 
-🔗 **Link do Figma:** [Acessar protótipo](#)
+🔗 **Link do Figma:** [Acessar protótipo](https://www.figma.com/design/ZiPSJpk6zpmnMYms0RiMk7/Prot%C3%B3tipo-ST?node-id=2-10&t=yHPR8Xn97eOWXES0-1)
 
 ## 🗂️ Roadmap
 
